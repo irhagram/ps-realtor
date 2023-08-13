@@ -1,4 +1,5 @@
 local QBCore = exports['qb-core']:GetCoreObject()
+QBCore.Functions.AddJob(Config.Job.label:lower(), Config.Job)
 
 RegisterNetEvent('QBCore:Server:UpdateObject', function()
 	if source ~= '' then return false end

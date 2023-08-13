@@ -3,6 +3,30 @@ Config = Config or {}
 -- Set your Real Estate here
 Config.RealtorJobName = "realtor"
 
+Config.Job = {
+    label = 'Realtor',
+    defaultDuty = true,
+    offDutyPay = false,
+    grades = {
+        ['0'] = {
+            name = 'Trainee',
+            payment = 200
+        },
+        ['1'] = {
+            name = 'Realtor',
+            payment = 350
+        },
+        ['2'] = {
+            name = 'Manager',
+            pay = 500
+        },
+        ['3'] = {
+            name = 'Owner',
+            pay = 750
+        }
+    }
+}
+
 -- Set this value to true if you want to use the command to open the Housing Menu(Realtor Menu)
 Config.UseCommand = true
 
